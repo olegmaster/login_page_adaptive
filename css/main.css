@@ -3,6 +3,7 @@ body {
     font-family: "Open Sans";
 
 }
+
 *:focus {
     outline: none;
 }
@@ -29,7 +30,7 @@ body {
 
 }
 
-.create-new-password-label{
+.create-new-password-label {
     width: 228px;
     color: #000;
     font-size: 22px;
@@ -116,7 +117,7 @@ body {
 
 }
 
-.content-wrapper .registration-form .email,.password {
+.content-wrapper .registration-form .email, .password {
     box-sizing: border-box;
     border-top: 0;
     border-left: 0;
@@ -170,7 +171,7 @@ body {
 }
 
 
-.content-wrapper .registration__links-wrapper a{
+.content-wrapper .registration__links-wrapper a {
     color: #73bcff;
     font-size: 12px;
     text-decoration: none;
@@ -185,7 +186,14 @@ body {
 .footer .support-text {
     text-align: center;
     font-size: 12px;
-    color: rgba(255, 255, 255, .75)
+    color: rgba(255, 255, 255, .75);
+}
+
+.footer .support-text a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+    margin: 0 14px;
+
 }
 
 #google-sign-in {
