@@ -1,0 +1,207 @@
+body {
+    background-color: #3b404f;
+    font-family: "Open Sans";
+
+}
+*:focus {
+    outline: none;
+}
+
+
+.content-wrapper {
+    max-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration__logo {
+    width: 192px;
+    height: 96px;
+    margin-top: 32px;
+    background-image: url("../img/logo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.create-new-password-label{
+    width: 228px;
+    color: #000;
+    font-size: 22px;
+    margin: 30px auto 0;
+}
+
+.content-wrapper .registration__title, .enter-portal__title {
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    max-width: 320px;
+
+}
+
+.enter-portal__title {
+    margin-bottom: 24px;
+}
+
+.content-wrapper .registration__steps-wrapper {
+    display: flex;
+    margin: 0 28px;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.content-wrapper .registration__steps-wrapper .step_one {
+    width: 128px;
+    height: 19px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+}
+
+
+.content-wrapper .registration__steps-wrapper .step_two {
+    width: 128px;
+    height: 19px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.content-wrapper .registration__steps-wrapper .bottom-line {
+    margin-top: 4px;
+    height: 4px;
+    align-self: stretch;
+    flex-grow: 0;
+    opacity: 0.4;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.content-wrapper .registration__steps-wrapper .bottom-line.completed {
+    opacity: 1;
+    background-color: #73d609;
+}
+
+.registration-form {
+    min-height: 140px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    padding: 30px 24px;
+    display: flex;
+    border-radius: 2px;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.registration-form :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.content-wrapper .inform-message {
+    background-color: #fff;
+    padding: 30px 24px;
+    border-radius: 2px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+
+}
+
+.content-wrapper .registration-form .email,.password {
+    box-sizing: border-box;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .6);
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 8px;
+
+}
+
+.content-wrapper .registration-form .password:focus {
+    color: #73d609;
+    border-bottom: 2px solid #73d609;
+}
+
+.content-wrapper .registration-form .email.error {
+    color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+}
+
+.content-wrapper .registration-form .error-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 23px;
+}
+
+.content-wrapper .registration-form .button-next {
+    width: 272px;
+    height: 43px;
+    margin: 16px auto 0;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #73d609;
+    font-weight: bold;
+
+}
+
+.content-wrapper .registration-form .button-next:disabled {
+    opacity: 0.6;
+}
+
+
+.content-wrapper .registration__links-wrapper {
+    color: #73bcff;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 0;
+}
+
+.footer {
+    margin-bottom: 24px;
+    margin-top: 52px;
+}
+
+.footer .support-text {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .75)
+}
+
+#google-sign-in {
+    cursor: pointer;
+    width: 185px;
+    height: 40px;
+    margin: 88px auto 0;
+    background-image: url("../img/google_button.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+#facebook-sign-in {
+    cursor: pointer;
+    width: 185px;
+    height: 40px;
+    margin: 16px auto;
+    background-image: url("../img/facebook_button.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
