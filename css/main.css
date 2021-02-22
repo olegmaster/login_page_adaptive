@@ -139,16 +139,22 @@ body {
     border-bottom: 1px solid #ff0000;
 }
 
+
+
 .content-wrapper .registration-form .error-message {
     text-align: center;
     font-size: 14px;
     margin-top: 23px;
 }
 
+.hidden {
+    display: none;
+}
+
 .content-wrapper .registration-form .button-next {
     width: 272px;
     height: 43px;
-    margin: 16px auto 0;
+    margin: 0 auto;
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
