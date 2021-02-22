@@ -164,13 +164,18 @@ body {
 
 
 .content-wrapper .registration__links-wrapper {
-    color: #73bcff;
-    font-size: 12px;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     padding: 24px 24px 0;
 }
+
+
+.content-wrapper .registration__links-wrapper a{
+    color: #73bcff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
 
 .footer {
     margin-bottom: 24px;
