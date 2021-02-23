@@ -1,13 +1,12 @@
 body {
     background-color: #3b404f;
-    font-family: "Open Sans";
+    font-family: "Open Sans", serif;
 
 }
 
 *:focus {
     outline: none;
 }
-
 
 .content-wrapper {
     max-width: 320px;
@@ -19,7 +18,7 @@ body {
     justify-content: space-between;
 }
 
-.registration__logo {
+.logo {
     width: 192px;
     height: 96px;
     margin-top: 32px;
@@ -37,7 +36,7 @@ body {
     margin: 30px auto 0;
 }
 
-.content-wrapper .registration__title, .enter-portal__title {
+.title {
     color: #fff;
     letter-spacing: 0;
     font-size: 30px;
@@ -48,34 +47,28 @@ body {
     margin: 0 auto;
 }
 
-.enter-portal__title {
+.title {
     margin-bottom: 24px;
 }
 
-.content-wrapper .registration__steps-wrapper {
+.steps-wrapper {
     display: flex;
     margin: 0 28px;
     color: #fff;
     font-size: 14px;
 }
 
-.content-wrapper .registration__steps-wrapper .step_one {
+.step-one, .step-two {
     width: 128px;
     height: 19px;
     margin-bottom: 24px;
-    margin-top: 24px;
 }
 
-
-.content-wrapper .registration__steps-wrapper .step_two {
-    width: 128px;
-    height: 19px;
+.step-two {
     margin-left: 16px;
-    margin-bottom: 24px;
-    margin-top: 24px;
 }
 
-.content-wrapper .registration__steps-wrapper .bottom-line {
+.bottom-line {
     margin-top: 4px;
     height: 4px;
     align-self: stretch;
@@ -85,14 +78,13 @@ body {
     background-color: #ffffff;
 }
 
-.content-wrapper .registration__steps-wrapper .bottom-line.completed {
+.bottom-line--completed {
     opacity: 1;
     background-color: #73d609;
 }
 
-.registration-form {
+.registration-form, .password-recovery-form {
     min-height: 140px;
-    padding-bottom: 30px;
     background-color: #fff;
     padding: 30px 24px;
     display: flex;
@@ -101,11 +93,11 @@ body {
     align-self: stretch;
 }
 
-.registration-form :not(:last-child) {
+.registration-form :not(:last-child), .password-recovery-form :not(:last-child) {
     margin-bottom: 24px;
 }
 
-.content-wrapper .inform-message {
+.inform-message {
     background-color: #fff;
     padding: 30px 24px;
     border-radius: 2px;
@@ -114,40 +106,40 @@ body {
 
 }
 
-.content-wrapper .registration-form .email, .password {
+.registration-form__email, .registration-form__password, .password-recovery-form__email, .password-recovery-form__password {
     box-sizing: border-box;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .6);
     width: 100%;
     font-size: 14px;
     padding: 12px 8px;
 
 }
 
-.content-wrapper .registration-form .password:focus {
+.registration-form__password--password-valid {
     color: #73d609;
     border-bottom: 2px solid #73d609;
 }
 
-.content-wrapper .registration-form .email.error {
+
+.registration-form__email--error {
     color: #ff0000;
     border-bottom: 1px solid #ff0000;
 }
 
 
-.content-wrapper .registration-form .error-message {
+.registration-form__error-message {
     text-align: center;
     font-size: 14px;
     margin-top: 23px;
 }
 
-.hidden {
+.registration-form__error-message--hidden {
     display: none;
 }
 
-.content-wrapper .registration-form .button-next {
+.registration-form__button-next, .password-recovery-form__button-next {
     width: 272px;
     height: 43px;
     margin: 0 auto;
@@ -161,19 +153,19 @@ body {
 
 }
 
-.content-wrapper .registration-form .button-next:disabled {
+.registration-form__button-next:disabled {
     opacity: 0.6;
 }
 
 
-.content-wrapper .registration__links-wrapper {
+.links-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 24px 24px 0;
 }
 
 
-.content-wrapper .registration__links-wrapper a {
+.links-wrapper a {
     color: #73bcff;
     font-size: 12px;
     text-decoration: none;
@@ -185,13 +177,13 @@ body {
     margin-top: 52px;
 }
 
-.footer .support-text {
+.footer__support-text {
     text-align: center;
     font-size: 12px;
     color: rgba(255, 255, 255, .75);
 }
 
-.footer .support-text a {
+.footer__support-text a {
     color: rgba(255, 255, 255, .75);
     text-decoration: none;
     margin: 0 14px;
@@ -218,5 +210,9 @@ body {
     background-image: url("../img/facebook_button.png");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+button:hover, a:hover {
+    filter: brightness(1.2);
 }
 
