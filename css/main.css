@@ -4,6 +4,13 @@ body {
 
 }
 
+.rtl{
+    text-align: right;
+    direction: rtl;
+}
+
+
+
 *:focus {
     outline: none;
 }
